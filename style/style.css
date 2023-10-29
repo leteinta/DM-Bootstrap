@@ -1,0 +1,40 @@
+:root{
+    /* Changement des couleurs bootstrap */
+    --bs-primary-rgb:14, 95, 150;
+    --bs-secondary-rgb:0, 139, 211;
+    --bs-danger-rgb:156, 47, 3;
+    --bs-primary-bg-subtle:rgb(241, 246, 248);
+    --bs-dark-rgb:0, 50, 123;
+    /* Création de variable couleur */
+    --sous-menu: rgb(238, 243, 247);
+    --link-hover:rgb(27, 163, 253);
+    --link:rgb(40, 129, 213);
+}
+
+nav>ul {
+	background-image: url("../img/bkg_menu_demarches.jpg");
+	background-size: contain;
+	background-repeat: repeat-x;
+}
+.dropdown-item{
+    white-space: wrap;
+}
+a.nav-link:hover{
+    text-decoration: underline;
+}
+
+/* Survole des liens, affichage sous menu */
+a.nav-link:hover+.dropdown-menu, .dropdown-menu:hover {
+    display: block;
+	background-color: var(--sous-menu);
+    border: none;
+    border-radius: 0;
+   
+}
+
+/* Suppression du / natif des fils d'ariane de Bootstrap */
+.breadcrumb-item+.breadcrumb-item::before {
+	content: none;
+}
+
+
